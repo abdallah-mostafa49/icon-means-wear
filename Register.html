@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Knewave&display=swap" rel="stylesheet">
+  <title>Register</title>
+
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #1a1a1a;
+
+    }
+
+    form {
+      display: flex;
+      font-family: "Chicle", serif;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 350px;
+      padding: 30px;
+      border-radius: 30px;
+      position: relative;
+      background-color: #1a1a1a;
+      color: #fff;
+      border: 1px solid #333;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      color: #00bfff;
+    }
+
+    .title::before,
+    .title::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: #00bfff;
+    }
+
+    .title::after {
+      animation: pulse 1s linear infinite;
+    }
+
+    .message, 
+    .login {
+      font-size: 20px;
+      color: rgb(244, 245, 250);
+    }
+
+    .login {
+      text-align: center;
+    }
+
+
+.login a {
+  color: #00bfff;
+  text-decoration:none ;
+}
+
+    .flex {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+
+    .form label {
+      position: relative;
+    }
+
+    .form label .input {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      padding: 20px 05px 05px 10px;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 10px;
+    }
+
+    .form label .input + span {
+      color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      font-size: 0.9em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown + span {
+      top: 12.5px;
+      font-size: 0.9em;
+    }
+
+    .form label .input:focus + span,
+    .form label .input:valid + span {
+      color: #00bfff;
+      top: 0px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+
+    .input {
+      font-size: medium;
+    }
+
+    .submit {
+      font-family: "Chicle", serif;
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 18px;
+      transform: .3s ease;
+      background-color: #00bfff;
+    }
+
+    .submit:hover {
+      background-color: #00bfff96;
+    }
+    .back-to-home{
+      font-family: "Chicle", serif;
+      background-color: #00bfff;
+      border-radius: 20px;
+      padding: 10px;
+      border: none;
+      outline: none;
+    
+    
+    }
+
+    .back-to-home a {
+     
+      color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+ 
+
+}
+.back-to-home:hover {
+  background-color: #00bfff96;}
+
+  </style>
+</head>
+<body> 
+  <form class="form">
+      <p class="title">R e g i s t e r </p>
+      <div class="flex">
+          <label>
+              <input class="input" type="text" placeholder="" required="">
+              <span>First name</span>
+          </label>
+
+          <label>
+              <input class="input" type="text" placeholder="" required="">
+              <span>Last name</span>
+          </label>
+      </div>  
+          
+      <label>
+          <input class="input" type="email" placeholder="" required="">
+          <span>Email</span>
+      </label> 
+          
+      <label>
+          <input class="input" type="password" placeholder="" required="">
+          <span>Password</span>
+      </label>
+      <label>
+          <input class="input" type="password" placeholder="" required="">
+          <span>Confirm password</span>
+      </label>
+      <button class="submit">Submit</button>
+      <button class="back-to-home"> <a href="index.html">back to home </button></a>
+      <p class="Login">Already have account ? <a href="Login.html">Login</a></p>
+  </form>
+</body>
+</html>
